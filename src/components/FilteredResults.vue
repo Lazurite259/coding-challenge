@@ -48,7 +48,6 @@ export default {
 
       await axios.get(breweriesURL).then(res => {
         breweries.value = res.data
-        breweries.value.phone = formatPhoneNumber(breweries.value.phone)
       })
     }
     getBreweries()
