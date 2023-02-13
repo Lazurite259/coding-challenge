@@ -2,7 +2,7 @@
   <div class="container">
     <h1>Breweries List</h1>
     <form class="my-5">
-      <div class="row my-2 justify-content-center">
+      <div class="row justify-content-center">
         <div class="col-sm-auto">
           <label class="col-form-label">City</label>
         </div>
@@ -79,11 +79,6 @@ export default {
 </script>
 
 <style scoped>
-.form {
-  display: inline-block;
-  text-align: left;
-  min-width: 40%;
-}
 .col-form-label {
   font-weight: bold;
 }
