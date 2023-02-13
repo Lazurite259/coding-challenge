@@ -1,16 +1,15 @@
 <template>
-    <div>
-        Coding Challenge
-    </div>
+  <div>
+    <Breweries />
+  </div>
 </template>
 
 <script>
-
+import Breweries from './components/Breweries.vue'
 export default {
   name: 'App',
-  setup() {
-      console.log('hello world');
-
+  components: {
+    Breweries
   }
 }
 </script>
