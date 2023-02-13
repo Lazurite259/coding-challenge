@@ -2,12 +2,12 @@
   <div class="container">
     <h1>Breweries List</h1>
     <form class="my-5">
-      <div class="row justify-content-sm-center">
+      <div class="row my-2 justify-content-center">
         <div class="col-sm-auto">
           <label class="col-form-label">City</label>
         </div>
         <div class="col-sm-auto">
-          <select v-model="city" class="form-control">
+          <select v-model="city" class="form-control text-center">
             <option v-for="(option, index) in cities" :key="index">
               {{ option }}
             </option>
@@ -17,7 +17,7 @@
           <label class="col-form-label">Type</label>
         </div>
         <div class="col-sm-auto">
-          <select v-model="type" class="form-control">
+          <select v-model="type" class="form-control text-center">
             <option v-for="(option, index) in types" :key="index">
               {{ option }}
             </option>
@@ -79,6 +79,11 @@ export default {
 </script>
 
 <style scoped>
+.form {
+  display: inline-block;
+  text-align: left;
+  min-width: 40%;
+}
 .col-form-label {
   font-weight: bold;
 }
